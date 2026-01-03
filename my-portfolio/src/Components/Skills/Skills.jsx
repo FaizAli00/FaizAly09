@@ -1,7 +1,14 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaCode, FaServer, FaDatabase, FaMobile, FaTools } from 'react-icons/fa';
-import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiExpress } from 'react-icons/si';
+import { FaCode, FaServer, FaDatabase, FaTools } from 'react-icons/fa';
+import {
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiExpress
+} from 'react-icons/si';
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -39,22 +46,14 @@ const Skills = () => {
         { name: 'Firebase', icon: <FaDatabase className="text-yellow-500 text-xl" />, level: 65 },
         { name: 'PostgreSQL', icon: <FaDatabase className="text-blue-600 text-xl" />, level: 60 }
       ]
-    },
-    {
-      title: 'Mobile',
-      icon: <FaMobile className="text-cyan-400 text-2xl" />,
-      skills: [
-        { name: 'React Native', icon: <SiReact className="text-blue-400 text-xl" />, level: 70 },
-        { name: 'Flutter', icon: <FaMobile className="text-blue-500 text-xl" />, level: 50 },
-        { name: 'iOS Development', icon: <FaMobile className="text-gray-400 text-xl" />, level: 40 },
-        { name: 'Android', icon: <FaMobile className="text-green-500 text-xl" />, level: 45 }
-      ]
     }
   ];
 
   return (
     <section id="skills" ref={ref} className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -66,11 +65,12 @@ const Skills = () => {
           </h2>
           <div className="w-20 h-1 bg-cyan-400 mx-auto mb-8"></div>
           <p className="max-w-3xl mx-auto text-gray-300 text-lg">
-            Here are the technologies I've worked with and my proficiency level in each
+            Here are the technologies I&apos;ve worked with and my proficiency level in each
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Skill Categories */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {skillCategories.map((category, index) => (
             <motion.div
               key={index}
@@ -81,11 +81,10 @@ const Skills = () => {
               className="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="flex items-center mb-6">
-                <div className="mr-3">
-                  {category.icon}
-                </div>
+                <div className="mr-3">{category.icon}</div>
                 <h3 className="text-xl font-semibold">{category.title}</h3>
               </div>
+
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
@@ -96,11 +95,15 @@ const Skills = () => {
                       </div>
                       <span className="text-sm text-gray-400">{skill.level}%</span>
                     </div>
+
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={inView ? { width: `${skill.level}%` } : {}}
-                        transition={{ duration: 1, delay: index * 0.1 + skillIndex * 0.05 }}
+                        transition={{
+                          duration: 1,
+                          delay: index * 0.1 + skillIndex * 0.05
+                        }}
                         className="h-2 rounded-full bg-cyan-400"
                       />
                     </div>
@@ -111,16 +114,29 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Additional Technologies Section */}
+        {/* Other Technologies */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.8 }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-semibold text-center mb-8">Other Technologies I Work With</h3>
+          <h3 className="text-2xl font-semibold text-center mb-8">
+            Other Technologies I Work With
+          </h3>
+
           <div className="flex flex-wrap justify-center gap-4">
-            {['Redux', 'Git', 'Docker', 'AWS', 'Jest', 'GraphQL', 'TypeScript', 'Next.js'].map((tech, index) => (
+            {[
+              'React',
+              'Git',
+              'Github',
+              'JavaScript',
+              'Tailwind',
+              'BootStrap',
+              'TypeScript',
+              'Node.js',
+              'Authentication'
+            ].map((tech, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1 }}
@@ -132,6 +148,7 @@ const Skills = () => {
             ))}
           </div>
         </motion.div>
+
       </div>
     </section>
   );

@@ -45,8 +45,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg">Email</h4>
-                  <a href="mailto:your.email@example.com" className="text-gray-300 hover:text-cyan-400 transition-colors">
-                    your.email@example.com
+                  <a href="mailto:faizu.ali9991@gmail.com" className="text-gray-300 hover:text-cyan-400 transition-colors">
+                    faizu.ali9991@gmail.com
                   </a>
                 </div>
               </div>
@@ -57,8 +57,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg">Phone</h4>
-                  <a href="tel:+1234567890" className="text-gray-300 hover:text-cyan-400 transition-colors">
-                    +1 (234) 567-890
+                  <a href="tel:+923125944088" className="text-gray-300 hover:text-cyan-400 transition-colors">
+                    +923125944088
                   </a>
                 </div>
               </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg">Location</h4>
-                  <p className="text-gray-300">San Francisco, CA</p>
+                  <p className="text-gray-300">Gilgit Baltistan</p>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
-                    placeholder="John Doe"
+                    placeholder="Enter Your Name"
                     required
                   />
                 </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
-                    placeholder="john@example.com"
+                    placeholder="Enter your Email"
                     required
                   />
                 </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                   id="message"
                   rows="6"
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
-                  placeholder="Leave a comment..."
+                  placeholder="Leave a message..."
                   required
                 ></textarea>
               </div>

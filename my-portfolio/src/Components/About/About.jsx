@@ -15,7 +15,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" ref={ref} className="py-20 bg-gray-800 text-white">
+    <section id="about" ref={ref} className="py-20 bg-sky-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -54,10 +54,11 @@ const About = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#contact"
+              href="https://www.upwork.com/freelancers/~01495372c77a1eaf22"
+              target="_blank"
               className="inline-block mt-8 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
             >
-              Contact
+              Lets Talk 
             </motion.a>
           </motion.div>
 

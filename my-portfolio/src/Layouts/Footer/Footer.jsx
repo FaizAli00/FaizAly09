@@ -10,6 +10,7 @@ import {
   FaMapMarkerAlt 
 } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
+import { FaUpwork } from "react-icons/fa6";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
   const socialLinks = [
     { 
       icon: <FaGithub size={20} />, 
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/FaizAli00',
       color: 'hover:text-gray-400',
       tooltip: 'GitHub'
     },
@@ -33,14 +34,14 @@ const Footer = () => {
       tooltip: 'LinkedIn'
     },
     { 
-      icon: <FaTwitter size={20} />, 
-      url: 'https://twitter.com/yourusername',
+      icon: <FaUpwork size={20} />, 
+      url: 'https://www.upwork.com/freelancers/~01495372c77a1eaf22',
       color: 'hover:text-sky-400',
       tooltip: 'Twitter'
     },
     { 
       icon: <SiGmail size={20} />, 
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:faizu.ali9991@gmail.com',
       color: 'hover:text-red-500',
       tooltip: 'Email'
     }
@@ -79,7 +80,7 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold mb-6 flex items-center">
               <span className="text-cyan-400 mr-2">{"<"}</span>
-              YourName
+              Faiz Ali
               <span className="text-cyan-400 ml-2">{"/>"}</span>
             </h3>
             <p className="text-gray-400 mb-6">
@@ -145,8 +146,8 @@ const Footer = () => {
                 className="flex items-center"
               >
                 <FaRegPaperPlane className="text-cyan-400 mr-3" />
-                <a href="mailto:your.email@example.com" className="hover:text-cyan-400 transition-colors">
-                  your.email@example.com
+                <a href="mailto:faizu.ali9991@gmail.com" className="hover:text-cyan-400 transition-colors">
+                  faizu.ali9991@gmail.com
                 </a>
               </motion.div>
               <motion.div 
@@ -154,14 +155,14 @@ const Footer = () => {
                 className="flex items-center"
               >
                 <FaPhone className="text-cyan-400 mr-3" />
-                <span>+1 (234) 567-890</span>
+                <span>+923125944088</span>
               </motion.div>
               <motion.div 
                 whileHover={{ x: 5 }}
                 className="flex items-center"
               >
                 <FaMapMarkerAlt className="text-cyan-400 mr-3" />
-                <span>San Francisco, CA</span>
+                <span>Gilgit Baltistan, Pakistan</span>
               </motion.div>
             </div>
 
@@ -185,7 +186,7 @@ const Footer = () => {
           className="border-t border-gray-800 mt-12 pt-8 text-center"
         >
           <p className="text-gray-500 text-sm flex items-center justify-center">
-            Made with <FaHeart className="mx-1.5 text-red-500 animate-pulse" /> by YourName © {new Date().getFullYear()}
+            Made with <FaHeart className="mx-1.5 text-red-500 animate-pulse" /> by Faiz Ali © {new Date().getFullYear()}
           </p>
           <p className="text-gray-600 text-xs mt-2">
             Crafted with React, Tailwind CSS, and Framer Motion
