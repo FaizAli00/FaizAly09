@@ -279,9 +279,7 @@ const Home = () => {
                 2000,
                 "Frontend Specialist",
                 2000,
-                "UI/UX Enthusiast",
-                2000,
-                "Full Stack Developer",
+                "Junior Full Stack Developer",
                 2000,
               ]}
               wrapper="span"

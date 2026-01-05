@@ -56,7 +56,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-[#060606] text-white pt-16 pb-8 relative overflow-hidden">
       {/* Animated background elements */}
       <motion.div 
         animate={{ rotate: 360 }}
