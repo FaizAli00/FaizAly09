@@ -7,25 +7,25 @@ const projects = [
     title: 'E-commerce Platform',
     description: 'Full-featured e-commerce platform with product listings, cart functionality, user authentication, and payment processing.',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe API'],
-    github: '#',
-    live: '#',
-    image: '/ecommerce.jpg'
+    github: 'https://github.com/FaizAli00',
+    // live: '',
+    image: '/image/ecommerce.PNG'
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, drag-and-drop interface, and team features.',
-    technologies: ['React', 'Firebase', 'Tailwind CSS', 'React DnD'],
-    github: '#',
-    live: '#',
-    image: '/taskapp.jpg'
+    title: 'Portfolio Website',
+    description: 'A collaborative portfolio website using react.js, Node.js, and For styling i used Tailwindcss.',
+    technologies: ['React', 'Node.js', 'Tailwind CSS', 'JavaScript'],
+    github: 'https://github.com/FaizAli00',
+    live: 'https://alyan-portfolio-rho.vercel.app/',
+    image: '/image/portfolio.PNG'
   },
   {
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media metrics with data visualization, user management, and export functionality.',
-    technologies: ['React', 'Chart.js', 'Node.js', 'MongoDB', 'JWT'],
-    github: '#',
-    live: '#',
-    image: '/dashboard.jpg'
+    title: 'Modern Marvels Website',
+    description: 'I Have created this Frontend website Using React.js, Node.js JavaScript and for styling ive used most popular Tailwindcss.',
+    technologies: ['React', 'JavaScript', 'Node.js', 'MongoDB', 'Tailwindcss'],
+    github: 'https://github.com/FaizAli00',
+    live: 'https://kingspointmodern.com/',
+    image: '/image/modernmarvels.PNG'
   },
 ];
 
@@ -115,9 +115,9 @@ const Projects = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#"
-            className="inline-block border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:bg-opacity-10 px-6 py-3 rounded-lg font-medium transition-colors"
+            className="inline-block border border-cyan-400 text-blue-700 hover:bg-white hover:bg-opacity-10 px-6 py-3 rounded-lg font-medium transition-colors"
           >
-            View More Projects
+            More Projects Comming Soon
           </motion.a>
         </motion.div>
       </div>
